@@ -115,3 +115,54 @@ tr:nth-child(even) {
 tr:hover {
   background: #f1f1f1;
 }
+
+@media (max-width: 768px) {
+  /* Sidebar becomes top navbar */
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  nav h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  /* Main content fills screen */
+  .container {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  /* Cards stack vertically */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Charts stack vertically */
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tables scroll horizontally */
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* Forms full width */
+  input,
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
