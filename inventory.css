@@ -1,0 +1,165 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  background: #f4f7f9;
+}
+
+/* SIDEBAR */
+nav {
+  width: 230px;
+  height: 100vh;
+  background: linear-gradient(180deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 20px;
+  position: fixed;
+}
+
+nav h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN CONTENT */
+.container {
+  margin-left: 250px;
+  padding: 25px;
+  width: 100%;
+}
+
+/* TITLE */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* FORM CARD */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #2ecc71;
+}
+
+/* BUTTON */
+form button {
+  grid-column: span 3;
+  padding: 12px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #27ae60;
+}
+
+/* SEARCH */
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background: #2ecc71;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* ROW STYLES */
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+/* ACTION BUTTON */
+td button {
+  background: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+td button:hover {
+  background: #c0392b;
+}
+/* INPUT GROUP FOR DATE */
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.input-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}

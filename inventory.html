@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Bonjel Pharmacy</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<nav>
+    <h2>💊 Bonjel</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="sell.html">Sell</a>
+    <a href="sales.html">Sales</a>
+    <a href="index.html">Logout</a>
+</nav>
+
+<!-- Main -->
+<div class="container">
+    <h1>Inventory</h1>
+
+    <form>
+        <input type="text" id="medName" placeholder="Medicine Name" required>
+        <input type="number" id="medCostPrice" placeholder="Cost Price (₦)" required>
+        <input type="number" id="medPrice" placeholder="Selling Price (₦)" required>
+        <input type="number" id="medQuantity" placeholder="Quantity" required>
+
+        <!-- Purchase Date -->
+        <div class="input-box">
+            <label>Purchase Date</label>
+            <input type="date" id="medPurchase" required>
+        </div>
+
+        <!-- Expiry Date -->
+        <div class="input-box">
+            <label>Expiry Date</label>
+            <input type="date" id="medExpiry" required>
+        </div>
+
+        <button type="submit">Add Medicine</button>
+    </form>
+
+    <input type="text" id="searchInput" placeholder="🔍 Search medicines...">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Purchase</th>
+                <th>Expiry</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="inventory.js"></script>
+</body>
+</html>

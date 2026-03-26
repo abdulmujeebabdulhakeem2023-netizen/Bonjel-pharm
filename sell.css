@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  background: #f4f7f9;
+}
+
+/* SIDEBAR */
+nav {
+  width: 230px;
+  height: 100vh;
+  background: linear-gradient(180deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 20px;
+  position: fixed;
+}
+
+nav h2 {
+  margin-bottom: 30px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN */
+.container {
+  margin-left: 250px;
+  padding: 25px;
+  width: 100%;
+}
+
+/* TITLE */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* SEARCH */
+#sellSearch {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* SEARCH RESULTS */
+#searchResults div {
+  background: white;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#searchResults div:hover {
+  background: #ecf0f1;
+}
+
+/* FORM */
+#sellForm {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#sellForm input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+/* BUTTON */
+button {
+  background: #2ecc71;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #27ae60;
+}
+
+/* CART */
+h3 {
+  margin-top: 25px;
+}
+
+#cartList div {
+  background: white;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TOTAL */
+#cartTotal {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* COMPLETE SALE BUTTON */
+#sellBtn {
+  margin-top: 15px;
+  width: 200px;
+}

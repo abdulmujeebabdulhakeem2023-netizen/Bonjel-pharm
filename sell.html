@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell - Bonjel Pharmacy</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav>
+        <h2>💊 Bonjel</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="sell.html">Sell</a>
+        <a href="sales.html">Sales</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+    <!-- Main -->
+    <div class="container">
+        <h1>Sell Medicines</h1>
+
+        <input type="text" id="sellSearch" placeholder="🔍 Search medicine...">
+        <div id="searchResults"></div>
+
+        <form id="sellForm">
+            <input type="text" id="sellName" readonly>
+            <input type="number" id="sellQty" placeholder="Qty">
+            <input type="number" id="sellPrice" placeholder="Price">
+            <button type="button" id="addToCart">Add 🛒</button>
+        </form>
+
+        <h3>Cart</h3>
+        <div id="cartList"></div>
+        <p id="cartTotal">Total: ₦0</p>
+        <button id="sellBtn">Complete Sale</button>
+    </div>
+
+    <script src="sell.js"></script>
+</body>
+</html>
